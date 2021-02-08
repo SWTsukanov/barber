@@ -1,0 +1,51 @@
+@import "variable.scss";
+
+.header {
+    color: $mainColor;
+    font-size: 16px;
+    font-family: QuattrocentoSansBold;
+
+    &__logo {
+        a {
+            font-family: VaniBold;
+            font-size: 30px;
+            color: $brovn;
+            text-decoration: none;
+        }
+    }
+
+    &__phones {
+        display: flex;
+        align-items: center;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                a {
+                    color: $mainColor;
+                    font-size: 16px;
+                    font-family: QuattrocentoSansBold;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        margin-right: 20px;
+    }
+
+    &__address {
+        display: flex;
+        align-items: center;
+    }
+
+    &__schedule {
+        display: flex;
+        align-items: center;
+    }
+
+    &__search {
+    }
+}
