@@ -1,19 +1,191 @@
 @import "font.scss";
+@import "variable.scss";
 @import "header.scss";
 
-.wrapper{
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
     width: 1920px;
     margin: 0 auto;
 }
 
-.search{
-    &__input{
+.search {
+    position: relative;
 
+    &__input {
+        width: 100%;
+        padding-right: 20px;
+        color: $mainColor;
+        font-size: 16px;
+        font-family: QuattrocentoSansBold;
+
+        border: none;
+        outline: none;
+        &:hover {
+            border-bottom: 1px solid $mainColor;
+        }
+        &:focus {
+            border-bottom: 1px solid $brovn;
+            & + .search__icon {
+                color: $brovn;
+            }
+        }
     }
-    &__icon{
-
-        
+    &__icon {
+        position: absolute;
+        right: 0;
     }
 }
 
+.sectionTitle{
+    padding-top: 150px;
+    margin-bottom: 150px;
+    h2{
+        font-family: VaniBold;
+        font-size: 32px;
+        margin: 0;
+    }
+    &__img{
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 20px;
+            display: block;
+            height: 1px;
+            width: 20%;
+            background-color: $brovn;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: 260px;
+            top: 20px;
+            display: block;
+            height: 1px;
+            width: 20%;
+            background-color: $brovn;
+        }
+    }
+    p{
+        font-family: QuattrocentoSans;
+        font-size: 20px;
+        
+    }
+
+    font-size: 20px;
+}
+
+.home {
+    position: relative;
+    &__nav {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        min-height: 80px;
+        background-color: rgba(125, 125, 125, 0.4);
+        z-index: 2;
+        .navbar {
+            padding: 0 0 0 50px;
+            .nav-item {
+                text-transform: uppercase;
+
+                .nav-link {
+                    font-family: QuattrocentoSansBold;
+                    font-size: 20px;
+                    padding: 25px;
+                    color: #fff;
+                }
+            }
+            .active {
+                background-color: #86746c;
+                border-bottom: 3px solid $brovn;
+                a {
+                    color: $mainColor !important ;
+                }
+            }
+        }
+    }
+
+    &__slider {
+        img {
+            width: 100%;
+        }
+    }
+    &__slogan {
+        position: absolute;
+
+        top: 200px;
+    }
+    &__title {
+        font-family: VaniBold;
+        font-size: 72px;
+        text-transform: uppercase;
+        color: #fff;
+        &_brovn {
+            color: $brovn;
+        }
+    }
+    &__btn {
+        font-family: QuattrocentoSans;
+        font-size: 30px;
+        padding: 10px 20px;
+        color: #fff;
+        border: 1px solid $brovn;
+
+        &:hover {
+            color: $mainColor;
+        }
+    }
+}
+
+.about{
+   
+    .card{
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        min-height: 330px;
+        &__img{
+            padding: 10px;
+            margin-top: -40px;
+            margin-bottom: 40px;
+            width: min-content;
+            border: 2px solid $brovn;
+            border-radius: 50%;
+            background-color: #fff;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        span{
+            display: block;
+            height: 5px;
+            width: 20%;
+            background-color: $brovn;
+            margin: 30px;
+        }
+        h3{
+            font-size: 20px;
+            font-family: Vani;
+            font-weight: 600;
+            margin: 0;
+        }
+        P{
+            text-align: center;
+            width: 335px;
+            font-family: QuattrocentoSans;
+            font-size: 20px;
+        }
+    }
+
+    
+}
 
