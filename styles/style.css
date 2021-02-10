@@ -88,6 +88,26 @@ p {
   padding: 0;
 }
 
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+.mr-150 {
+  margin-right: 100px;
+}
+
+.ml-150 {
+  margin-left: 100px;
+}
+
+.light {
+  color: #fff;
+}
+
 .wrapper {
   width: 1920px;
   margin: 0 auto;
@@ -134,34 +154,29 @@ p {
   font-family: VaniBold;
   font-size: 32px;
   margin: 0;
+  text-transform: uppercase;
+}
+
+.sectionTitle__line {
+  display: block;
+  height: 1px;
+  width: 20%;
+  background-color: #985336;
+  margin: 0 10px;
 }
 
 .sectionTitle__img {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 60%;
   margin: 0 auto;
-}
-
-.sectionTitle__img::before {
-  content: '';
-  position: absolute;
-  left: 40px;
-  top: 20px;
-  display: block;
-  height: 1px;
-  width: 20%;
-  background-color: #985336;
-}
-
-.sectionTitle__img::after {
-  content: '';
-  position: absolute;
-  left: 260px;
-  top: 20px;
-  display: block;
-  height: 1px;
-  width: 20%;
-  background-color: #985336;
 }
 
 .sectionTitle p {
@@ -270,8 +285,8 @@ p {
 
 .about .card span {
   display: block;
-  height: 5px;
-  width: 20%;
+  height: 2px;
+  max-width: 40%;
   background-color: #985336;
   margin: 30px;
 }
@@ -285,8 +300,107 @@ p {
 
 .about .card P {
   text-align: center;
-  width: 335px;
+  max-width: 335px;
   font-family: QuattrocentoSans;
   font-size: 20px;
+}
+
+.about__img {
+  position: relative;
+  background-image: url(../img/aboutImg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 150px;
+}
+
+.about__img .overlay {
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__block .title {
+  font-family: VaniBold;
+  font-size: 60px;
+  color: #985336;
+}
+
+.about__block .subTitle {
+  font-family: QuattrocentoSansBold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.services {
+  min-height: 1170px;
+  background-image: url(../img/servicesMan.png);
+  background-position-x: center;
+  background-size: cover;
+}
+
+.services__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 140px;
+}
+
+.services__icon {
+  padding: 15px;
+  margin: 40px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border: 2px solid #985336;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.services__icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.services__text .title {
+  font-family: VaniBold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.services__text .text {
+  font-family: QuattrocentoSans;
+  font-size: 18px;
+}
+
+.apoinment {
+  background-image: url(../img/apointment.png);
+  background-position-x: center;
+  background-size: cover;
+}
+
+.control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */
