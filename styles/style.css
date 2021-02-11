@@ -393,14 +393,175 @@ p {
 }
 
 .apoinment {
+  min-height: 1000px;
   background-image: url(../img/apointment.png);
   background-position-x: center;
   background-size: cover;
 }
 
-.control {
+.apoinment__btn {
+  background-color: #995437;
+  color: #fff;
+  font-family: QuattrocentoSans;
+  font-size: 20px;
+  padding: 20px 25px;
+  border: 3px solid #6e331a;
+}
+
+.apoinment textarea {
+  height: 100px;
+  resize: none;
+}
+
+.apoinment select {
+  color: #c1c1c1;
+}
+
+.apoinment select option {
+  color: #c1c1c1;
+}
+
+.apoinment input::-webkit-input-placeholder {
+  color: #c1c1c1;
+}
+
+.apoinment input:-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+.apoinment input::-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+.apoinment input::placeholder {
+  color: #c1c1c1;
+}
+
+.apoinment .control {
+  margin: 0 0 50px 0;
+  padding: 10px;
+  width: 100%;
   background: transparent;
+  color: #c1c1c1;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.barbers {
+  min-height: 1100px;
+}
+
+.barbers__promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.barbers__promo h3 {
+  font-family: VaniBold;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.barbers__promo p {
+  font-family: QuattrocentoSans;
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.slick-prev,
+.slick-next {
+  padding: 100px;
+}
+
+.slick-arrow {
+  background: transparent;
+}
+
+.clientSay {
+  min-height: 1000px;
+  background-image: url(../img/clientSay.png);
+  background-position-x: center;
+  background-size: cover;
+}
+
+.clientSay .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clientSay .slider .arrow {
+  max-height: 50px;
+  padding: 20px;
+  border-radius: 50%;
+  background: transparent;
+  color: #985336;
+  border: 3px solid #985336;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clientSay .slider .arrow:hover {
+  background-color: #985336;
+  color: #000;
+}
+
+.clientSay__review {
+  margin-top: 50px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clientSay__review p {
+  margin-top: 50px;
+  font-family: QuattrocentoSans;
+  font-size: 18px;
+  color: #d0d0d0;
+  max-width: 800px;
+  text-align: center;
+}
+
+.clientSay__review img {
+  margin-top: 50px;
+}
+
+.clientSay__review span {
+  margin-top: 30px;
+  font-family: Vani;
+  font-size: 20px;
+  color: #fff;
+}
+
+.gallery img {
+  max-width: 350px;
+  max-height: 380px;
 }
 /*# sourceMappingURL=style.css.map */

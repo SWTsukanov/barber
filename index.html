@@ -16,6 +16,8 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Barber</title>
   </head>
@@ -334,19 +336,219 @@
         <form class="apointment__form" action="">
           <div class="row">
             <div class="offset-lg-2 col-lg-4">
-              <input class="control" type="text" name="name" />
+              <input
+                class="control"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
             </div>
-            <div class="col-lg-4"><select class="control" name="service" id=""></select></div>
+            <div class="col-lg-4">
+              <select class="control" name="service" aria-placeholder="" id="">
+                <option value="">Service</option>
+              </select>
+            </div>
             <div class="offset-lg-2 col-lg-4">
-              <input class="control" type="text" name="name" />
+              <input
+                class="control"
+                type="text"
+                name="name"
+                placeholder="Phone"
+              />
             </div>
-            <div class="col-lg-4"><select class="control" name="service" id=""></select></div>
+            <div class="col-lg-4">
+              <select class="control" name="service" id="">
+                <option value="">Barber</option>
+              </select>
+            </div>
             <div class="offset-lg-2 col-lg-4">
-              <input class="control" type="text" name="name" />
+              <input
+                class="control"
+                type="text"
+                name="name"
+                placeholder="E-mail"
+              />
             </div>
-            <div class="col-lg-4"><select class="control" name="service" id=""></select></div>
+            <div class="col-lg-4">
+              <select class="control" name="service" id="">
+                <option value="">Date</option>
+              </select>
+            </div>
+            <div class="offset-lg-2 col-lg-8">
+              <textarea
+                class="control"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <div class="offset-lg-2 col-lg-8">
+            <button class="apoinment__btn btn" type="submit">
+              Make An Appointment
+            </button>
           </div>
         </form>
+      </div>
+    </section>
+
+    <section class="barbers">
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-3 col-lg-6">
+            <div class="sectionTitle text-center">
+              <h2>our barbers</h2>
+              <div class="sectionTitle__img">
+                <span class="sectionTitle__line"></span>
+                <img src="img/mustache.png" alt="" />
+                <span class="sectionTitle__line"></span>
+              </div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="barbers__promo">
+              <img src="img/barber1.png" alt="" />
+              <h3>Darrell Gibbs</h3>
+              <div class="stars">
+                <img src="img/starts3_5.png" alt="" />
+              </div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="barbers__promo">
+              <img src="img/barber2.png" alt="" />
+              <h3>David Clarke</h3>
+              <div class="stars">
+                <img src="img/starts3.png" alt="" />
+              </div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="barbers__promo">
+              <img src="img/barber3.png" alt="" />
+              <h3>Richard Owens</h3>
+              <div class="stars">
+                <img src="img/starts4.png" alt="" />
+              </div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clientSay">
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-3 col-lg-6">
+            <div class="sectionTitle text-center light">
+              <h2>our clients say</h2>
+              <div class="sectionTitle__img">
+                <span class="sectionTitle__line"></span>
+                <img src="img/mustache.png" alt="" />
+                <span class="sectionTitle__line"></span>
+              </div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="stars">
+            <img src="img/starts3.png" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="slider single-item">
+              <div class="clientSay__review">
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque l audantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur,
+                </p>
+                <img src="img/review_ava.png" alt="" />
+                <span>George Morgan</span>
+              </div>
+              <div class="clientSay__review">
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque l audantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur,
+                </p>
+                <img src="img/review_ava.png" alt="" />
+                <span>George Morgan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-3 col-lg-6">
+            <div class="sectionTitle text-center">
+              <h2>our gallery</h2>
+              <div class="sectionTitle__img">
+                <span class="sectionTitle__line"></span>
+                <img src="img/mustache.png" alt="" />
+                <span class="sectionTitle__line"></span>
+              </div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <row class="d-flex justify-content-center">
+          <col><img src="./img/1.png" alt=""></col>
+          <col><img src="./img/2.png" alt=""></col>
+          <col><img src="./img/3.png" alt=""></col>
+          <col><img src="./img/4.png" alt=""></col>
+          <col><img src="./img/5.png" alt=""></col>
+        </row>
+        <row class="d-flex justify-content-center">
+          <col><img src="./img/6.png" alt=""></col>
+          <col><img src="./img/7.png" alt=""></col>
+          <col><img src="./img/8.png" alt=""></col>
+          <col><img src="./img/9.png" alt=""></col>
+          <col><img src="./img/10.png" alt=""></col>
+        </row>
       </div>
     </section>
 
@@ -365,5 +567,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

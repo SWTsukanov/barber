@@ -12,17 +12,16 @@ p {
     text-align: right;
 }
 
-.mr-150{
+.mr-150 {
     margin-right: 100px;
 }
-.ml-150{
+.ml-150 {
     margin-left: 100px;
 }
 
-.light{
+.light {
     color: #fff;
 }
-
 
 .wrapper {
     width: 1920px;
@@ -237,12 +236,11 @@ p {
         display: flex;
         align-items: center;
         margin-bottom: 140px;
-        
     }
 
     &__icon {
         padding: 15px;
-       
+
         margin: 40px;
         width: min-content;
         border: 2px solid $brovn;
@@ -255,7 +253,6 @@ p {
     }
 
     &__text {
-        
         .title {
             font-family: VaniBold;
             font-size: 20px;
@@ -265,25 +262,133 @@ p {
         .text {
             font-family: QuattrocentoSans;
             font-size: 18px;
-            
         }
     }
 }
 
-.apoinment{
+.apoinment {
+    min-height: 1000px;
     background-image: url(../img/apointment.png);
     background-position-x: center;
     background-size: cover;
 
-    &__form{
-       input{
-           
+    &__btn {
+        background-color: #995437;
+        color: #fff;
+        font-family: QuattrocentoSans;
+        font-size: 20px;
+        padding: 20px 25px;
+        border: 3px solid #6e331a;
+    }
+
+    textarea {
+        height: 100px;
+        resize: none;
+    }
+    select {
+        color: #c1c1c1;
+        option {
+            color: #c1c1c1;
         }
-       
+    }
+    input::placeholder {
+        color: #c1c1c1;
+    }
+
+    .control {
+        margin: 0 0 50px 0;
+        padding: 10px;
+        width: 100%;
+        background: transparent;
+        color: #c1c1c1;
+        border: none;
+        border-bottom: 1px solid #c1c1c1;
     }
 }
- .control{
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid #fff;
+
+.barbers {
+    min-height: 1100px;
+    &__promo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-family: VaniBold;
+            font-size: 24px;
+            margin-top: 30px;
         }
+
+        p {
+            font-family: QuattrocentoSans;
+            font-size: 18px;
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.slick-prev,
+.slick-next {
+    padding: 100px;
+}
+.slick-arrow {
+    background: transparent;
+}
+
+.clientSay {
+    min-height: 1000px;
+    background-image: url(../img/clientSay.png);
+    background-position-x: center;
+    background-size: cover;
+    .slider {
+        display: flex;
+        align-items: center;
+        .arrow {
+            max-height: 50px;
+            padding: 20px;
+            border-radius: 50%;
+            background: transparent;
+            color: $brovn;
+            border: 3px solid $brovn;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background-color: $brovn;
+                color: #000;
+            }
+        }
+    }
+    &__review {
+        margin-top: 50px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        p {
+            margin-top: 50px;
+            font-family: QuattrocentoSans;
+            font-size: 18px;
+            color: #d0d0d0;
+            max-width: 800px;
+            text-align: center;
+        }
+        img {
+            margin-top: 50px;
+        }
+        span {
+            margin-top: 30px;
+            font-family: Vani;
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+}
+
+.gallery{
+    img{
+        max-width: 350px;
+        max-height: 380px;
+    }
+}
